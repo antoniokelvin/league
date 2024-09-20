@@ -1,3 +1,5 @@
+package com.spandigital;
+
 public class Team implements Comparable<Team> {
     String name;
     int points;
