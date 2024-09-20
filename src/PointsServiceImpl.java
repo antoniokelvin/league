@@ -52,6 +52,7 @@ public class PointsServiceImpl {
             } else {
                 if (previous.get().getPoints() == team.getPoints()) {
                     team.setRank(previous.get().getRank());
+                    rank.getAndIncrement();
                 } else {
                     rank.incrementAndGet();
                     team.setRank(rank.get());
